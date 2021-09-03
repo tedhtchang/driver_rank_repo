@@ -1,5 +1,7 @@
 project: driver_ranking
 registry: data/registry.db
+# If you like your registry file in object store:
+# registry: s3://driver-rank-repo/registry.db
 provider: local
 online_store:
   type: redis
