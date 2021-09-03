@@ -5,9 +5,9 @@ from feast import FileSource, Entity, Feature, FeatureView, ValueType
 driver = Entity(name="driver_id", join_key="driver_id", value_type=ValueType.INT64,)
 
 driver_stats_source = FileSource(
-    path="driver_rank_repo/data/driver_stats.parquet",
+    path="data/driver_stats.parquet",
     # If you like your driver stats file in object store:
-    # path="s3://driver_rank_repo/data/driver_stats.parquet"
+    # path="s3://driver_rank_repo/driver_stats.parquet"
     # s3_endpoint_override="https://s3.us-south.cloud-object-storage.appdomain.cloud"
     event_timestamp_column="event_timestamp",
     created_timestamp_column="created",
