@@ -1,5 +1,5 @@
 project: driver_ranking
-registry: data/registry.db
+registry: s3://driver-rank-repo/registry.db
 provider: local
 online_store:
   type: redis
